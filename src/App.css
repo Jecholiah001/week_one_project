@@ -1,38 +1,85 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  width: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: left;
+  font-size: 15px;
+  border-radius: 1rem;
+  overflow: hidden;
+  margin: 500px;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 700px;
 }
 
-.App-link {
-  color: #61dafb;
+.Page {
+  width: 100%;
+  height: 450px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.Icon{
+  margin-top: 40px;
+  margin-left: 25px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 115px;
+  background-color: hsl(0, 0%, 95%);
+  color: inherit;
+  cursor: pointer;
+  margin-left: 30px;
+  margin-top: 35px;  
+}
+
+.btn:hover { 
+  background-color: inherit; 
+  color: white; 
+  border: 1px solid white; 
+  cursor: pointer; 
+  transition: all 300ms; 
+}
+
+h2{
+  padding: 5px 30px;
+  color: hsl(0, 0%, 95%);
+  font-family: 'Big Shoulders Display', sans-serif;
+  font-weight: 700px;
+}
+
+p{
+  padding: 10px 30px;
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 2;
+}
+
+@media screen and (min-width:320px) and (max-width:500px) {
+  .App {
+    display: grid;
+    width:80%;
+    height:100%;
+    font-size: 15px;
+    margin: 20px;
   }
-  to {
-    transform: rotate(360deg);
+  .Page {
+    width: 350px;
+    height: 450px;
+  }
+
+  .Icon{
+    margin-top: 40px;
+    margin-left: 65px;
+  }
+  h2 {
+    padding: 5px 70px;
+  }
+
+  p{
+    padding:5px 70px;
+  }
+  .btn {
+    margin-left: 70px;
   }
 }
